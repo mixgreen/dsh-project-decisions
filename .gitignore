@@ -1,0 +1,11 @@
+node_modules/
+dist/
+coverage/
+*.tgz
+*.tmp
+.DS_Store
+.env
+.env.*
+!.env.example
+# This repository develops the plugin; local project decisions are not release assets.
+/PROJECT_DECISIONS.md

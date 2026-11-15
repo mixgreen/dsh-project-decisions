@@ -1,0 +1,4 @@
+- insert:
+    - id: project-decisions
+      name: '@local/dsh-project-decisions'
+      config: {}

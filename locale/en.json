@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Project decisions",
+    "description": "Keep open questions and confirmed agreements in a two-column board. You create entries; you and the agent can edit and move them. One PROJECT_DECISIONS.md per workspace is shared with agents. Confirmed does not mean implemented. Open the Project decisions view inside a project session. It follows that session's project and shares decisions across that project's sessions. Local workspaces only."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@local/dsh-project-decisions",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A human-seeded project decision board, backed by one Markdown file and shared with DSH agents.",
+  "exports": {
+    ".": "./host.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": ["host.js", "store.js", "client.js", "cordis.patch.yml", "locale", "icon.svg", "README.md"],
+  "scripts": { "test": "node --test tests/*.test.js", "check": "node --check host.js && node --check store.js && node --check client.js" },
+  "engines": { "dsh": ">=0.2.2-rc.2 <0.3.0" },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": { "platform": "web", "immediately": true, "inject": ["@deepseek-ai/dsh-client-ui-layout", "@deepseek-ai/dsh-client-ui-sidebar", "@deepseek-ai/dsh-client-ui-conversation"] }
+  }
+}
